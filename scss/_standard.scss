@@ -1,0 +1,293 @@
+$screen-xs: 767px;
+
+$amiri: 'Amiri', serif;
+$helvetica: "HelveticaNeue", sans-serif;
+
+$primary01: #db0001;
+$primary02: #263564;
+
+$text-primary01: #777;
+$border-primary01: #F3F3F3;
+
+$white: #ffffff;
+$black: #000000;
+$yellow:yellow;
+$red :#dc0e0e;
+
+$layer-black :#04171a;
+$yellow :#fec63f;
+
+$box-shadow01: 0 1px 119px rgba(0, 0, 0, 0.15);
+$btn-shadow: 0 2.01389px 2.01389px rgba(0, 0, 0, 0.25);
+$transition: all 0.2s ease-in-out;
+
+body {
+  font-family: $amiri;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+}
+
+.container {
+  max-width: 1420px;
+  //margin: 0 auto;
+}
+
+//      ****************************  Text Element  ****************************
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1em;
+  color: $white;
+  font-family: $amiri;
+  letter-spacing: -0.04em;
+}
+
+h2, .h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: $black;
+  font-family: $amiri;
+}
+
+h3, .h3 {
+  font-family: $amiri;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+}
+
+
+p, .p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $amiri;
+  color: $text-primary01;
+}
+
+span {
+  font-family: $amiri;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: $black;
+  display: inline-block;
+}
+
+a, .a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: $amiri;
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $amiri;
+  color: $black;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+}
+
+
+//      ****************************  Button Element  ****************************
+
+.btn-style{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  height: 40px;
+  padding: 11px 20px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 0;
+  text-decoration: none;
+  font-family: $amiri;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.42;
+  background: $black;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  //border: 2px solid transparent;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+  &:before{
+    content: '';
+    //display: none;
+    background: $white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    //transition: all .3s ease-in-out;
+    transition: background .2s ease 0s;
+    opacity: 0;
+  }
+  &:hover{
+    //transition: all .3s ease-in-out;
+    transition: background .2s ease 0s;
+    opacity: .85;
+    background: $red;
+    transition-delay: .25s;
+    &:before{
+      //display: block;
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      width: 100%;
+    }
+  }
+  &.small{
+    padding: 10px 15px 11px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &.transparent{
+    background: transparent;
+    border-color: $primary01;
+    color: $primary01;
+  }
+  &.colored-border{
+    color: $primary01;
+    text-transform: capitalize;
+    border-radius: 60px;
+    background: 0 0;
+    //border-image-slice: 1!important;
+    //border-image: linear-gradient(135deg,#0088CC 0%,#e36159 80%);
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, rgb(255 1 2), rgb(243 182 0 / 50%)) border-box;
+    border: 2px solid transparent;
+  }
+  &.text{
+    min-width: 90px;
+    height: 32px;
+    padding: 7px 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: $primary01;
+  }
+  &.round{
+    border-radius: 50px;
+  }
+  &.shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  }
+  &.icon{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &.gradient{
+    background: rgb(219,10,10);
+    background: linear-gradient(0deg, rgba(219,10,10,1) 0%, rgba(253,219,45,1) 100%);
+    border: none;
+    color: white;
+  }
+  &.icon-circle{
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    i{
+      font-size: 22px;
+    }
+  }
+  &.white{
+    background: $white;
+    color: $primary01;
+    border-color: $white;
+    &:hover{
+      background: transparent;
+      color: $white;
+      border-color: $white;
+    }
+  }
+  &.red{
+    background: $red;
+    color: $white;
+    border: none;
+  }
+}
+
+
+
+//      ****************************  Global Element  ****************************
+
+
+.form {
+  .form-group {
+    margin-bottom: 24px;
+  }
+  label{
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 5px;
+    }
+  }
+  .form-control {
+    border-radius: 8px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    height: 64px;
+    padding: 8px 17px 8px;
+    border: none;
+    color: $text-primary01;
+    position: relative;
+    outline: none;
+    appearance: none;
+    background-color: $white;
+    @media screen and (max-width: 991px) {
+      height: 55px;
+    }
+    &::placeholder {
+      color: $text-primary01;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid $border-primary01;
+    border-radius: 4px;
+  }
+}
+
