@@ -9,6 +9,7 @@ $primary02: #263564;
 $text-primary01: #777;
 $border-primary01: #F3F3F3;
 
+$light-gray : #f9f9f9;
 $white: #ffffff;
 $black: #000000;
 $yellow:yellow;
@@ -46,9 +47,9 @@ h1 {
 }
 
 h2, .h2 {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 45px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
   color: $black;
   font-family: $amiri;
 }
@@ -64,10 +65,10 @@ h3, .h3 {
 
 p, .p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 1.5;
   font-family: $amiri;
-  color: $text-primary01;
+  color: $black;
 }
 
 span {
@@ -138,32 +139,13 @@ ul {
   //border: 2px solid transparent;
   transition: all .3s ease-in-out;
   z-index: 2;
-  &:before{
-    content: '';
-    //display: none;
-    background: $white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    //transition: all .3s ease-in-out;
-    transition: background .2s ease 0s;
-    opacity: 0;
-  }
   &:hover{
     //transition: all .3s ease-in-out;
     transition: background .2s ease 0s;
     opacity: .85;
-    background: $red;
+    background: $black;
     transition-delay: .25s;
-    &:before{
-      //display: block;
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      width: 100%;
-    }
+    color: $white;
   }
   &.small{
     padding: 10px 15px 11px;
