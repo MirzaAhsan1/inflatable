@@ -16,7 +16,7 @@ h1 {
   font-weight: 700;
   font-size: 80px;
   line-height: 1em;
-  color: #ffffff;
+  color: #000000;
   font-family: "Amiri", serif;
   letter-spacing: -0.04em;
 }
@@ -721,9 +721,65 @@ ul li {
   border: 1px solid #ced4da;
   border-radius: 0px;
 }
-#contact-us-page .form-controlbg {
-  height: 140px;
-  width: 100%;
+
+#why-choose-us-page .container {
+  width: 675px;
+}
+#why-choose-us-page .container h3 {
+  text-align: left;
+  font-size: 1.93333em;
+  font-family: Amiri, serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  padding: 40px 0px 50px;
+}
+#why-choose-us-page .container h1 {
+  text-align: center;
+  font-size: 1.93333em;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+#why-choose-us-page .container .site-paragraphs ol li {
+  padding-bottom: 22px;
+  line-height: 23px;
+}
+
+#our-quality-page {
+  padding: 50px 0px 50px;
+}
+#our-quality-page .container {
+  width: 675px;
+  padding-bottom: 45px;
+}
+#our-quality-page .container h1 {
+  text-align: center;
+  font-size: 1.93333em;
+  padding: 10px 0px 41px;
+  font-weight: 400;
+}
+
+#our-quality-page .container {
+  width: 690px;
+}
+#our-quality-page .container ol li {
+  padding-bottom: 22px;
+  line-height: 23px;
+}
+
+#payment-shipment-page {
+  padding: 20px 0px 10px;
+}
+#payment-shipment-page .container {
+  width: 690px;
+  padding-bottom: 45px;
+}
+#payment-shipment-page .container h3 {
+  text-align: center;
+  font-size: 1.93333em;
+  padding: 10px 0px 41px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
