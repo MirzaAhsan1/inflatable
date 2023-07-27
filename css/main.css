@@ -782,4 +782,72 @@ ul li {
   font-weight: 400;
 }
 
+#bounce-house-instruction-page .container {
+  width: 675px;
+}
+#bounce-house-instruction-page .container h3 {
+  text-align: center;
+  font-size: 1.93333em;
+  padding: 10px 0px 41px;
+  font-weight: 400;
+}
+
+#Images {
+  padding: 10px 0px 25px;
+}
+#Images .container {
+  width: 670px;
+}
+#Images .container img {
+  margin-left: -10px;
+}
+
+#Warning {
+  padding: 80px 0px 20px;
+}
+#Warning .container {
+  width: 670px;
+}
+
+#Ullinks {
+  padding: 80px 0px 20px;
+}
+#Ullinks .container {
+  width: 675px;
+}
+
+#water-games-instructions .container {
+  width: 675px;
+}
+#water-games-instructions .container h1 {
+  text-align: center;
+  font-size: 1.93333em;
+  padding: 10px 0px 41px;
+  font-weight: 400;
+}
+#water-games-instructions .container h1 ol li {
+  font-size: 15px;
+}
+
+.text {
+  padding: 10px 0px 58px;
+}
+
+#bubble-house-instructions .container {
+  width: 675px;
+}
+#bubble-house-instructions .container .site-paragraphs {
+  line-height: 30px;
+}
+#bubble-house-instructions .container h1 {
+  text-align: center;
+  font-size: 1.93333em;
+  padding: 10px 0px 41px;
+  font-weight: 400;
+}
+
+.text1 {
+  padding: 37px 0px 58px;
+}
+
 /*# sourceMappingURL=main.css.map */
